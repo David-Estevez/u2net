@@ -1,0 +1,4 @@
+numpy
+requests
+scikit-image>=0.15.0
+torch
