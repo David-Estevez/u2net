@@ -22,6 +22,12 @@ class u2net(object):
             self.model = U2NET(3, 1)
         elif model_name == 'u2netp':
             self.model = U2NETP(3, 1)
+        elif model_name == 'people':
+            self.model = U2NET(3, 1)
+            model_name = 'u2net_human_seg'
+        else:
+            print("Model {} not found, using default (u2net)".format(model_name))
+            self.model = U2NET(3, 1)
 
         if not model_dir:
             model_dir = os.path.join(u2net.U2NET_MODEL_DIR, model_name + '.pth')
