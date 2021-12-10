@@ -54,4 +54,4 @@ def download_models(target_folder='~/.u2net'):
     model3 = folder / 'u2net_human_seg.pth'
     if not model3.is_file():
         print("Model not found. Downloading model u2net_human_seg.pth...")
-        download_file_from_google_drive('1-Yg0cxgrNhHP-016FPdp902BR-kSsA4P', model2)
+        download_file_from_google_drive('1-Yg0cxgrNhHP-016FPdp902BR-kSsA4P', model3)

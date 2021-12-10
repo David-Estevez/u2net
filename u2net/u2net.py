@@ -27,6 +27,7 @@ class u2net(object):
             model_name = 'u2net_human_seg'
         else:
             print("Model {} not found, using default (u2net)".format(model_name))
+            model_name = 'u2net'
             self.model = U2NET(3, 1)
 
         if not model_dir:

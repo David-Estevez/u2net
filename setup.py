@@ -5,7 +5,7 @@ with open('requirements.txt') as f:
 
 setuptools.setup(
     name="u2net",
-    version="1.1.0",
+    version="1.1.1",
     url="https://github.com/David-Estevez/U-2-Net/",
     author="David Estevez",
     description='Implementation of "U^2-Net: Going Deeper with Nested U-Structure for Salient Object Detection." packaged for easy use.',
