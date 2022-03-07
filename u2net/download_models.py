@@ -50,3 +50,9 @@ def download_models(target_folder='~/.u2net'):
     if not model2.is_file():
         print("Model not found. Downloading model u2netp.pth...")
         download_file_from_google_drive('1rbSTGKAE-MTxBYHd-51l2hMOQPT_7EPy', model2)
+
+    model3 = folder / 'u2net_portrait.pth'
+    if not model3.is_file():
+        print("Model not found. Downloading model u2net_portrait.pth...")
+        download_file_from_google_drive('1IG3HdpcRiDoWNookbncQjeaPN28t90yW', model3)
+

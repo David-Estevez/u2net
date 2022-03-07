@@ -15,10 +15,10 @@ class u2net(object):
         """
         Creates a u2net model using either u2net or u2netp (smaller) architectures.
         By default it will use the pretrained network, stored in '~/.u2net'.
-        :param model_name: {u2net, u2netp}
+        :param model_name: {u2net, u2netp, u2net_portrait}
         :param model_dir: Specify a different directory to use a custom model.
         """
-        if model_name == 'u2net':
+        if model_name == 'u2net' or model_name == 'u2net_portrait':
             self.model = U2NET(3, 1)
         elif model_name == 'u2netp':
             self.model = U2NETP(3, 1)
